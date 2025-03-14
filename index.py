@@ -8,7 +8,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)
 
-# Yükle
 model = tf.keras.models.load_model("chatbot_model.h5")
 tokenizer = pickle.load(open("tokenizer.pkl", "rb"))
 lbl_encoder = pickle.load(open("label_encoder.pkl", "rb"))
