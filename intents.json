@@ -1,0 +1,241 @@
+{
+  "intents": [
+    {
+      "tag": "selamlama",
+      "patterns": [
+        "Merhaba",
+        "Selam",
+        "Naber",
+        "Günaydın",
+        "İyi günler",
+        "Selamun aleyküm",
+        "Merhabalar",
+        "Hey",
+        "Yo",
+        "Nasılsın",
+        "Ne haber",
+        "Hadi bakalım",
+        "Selamlar",
+        "Nasıl gidiyor",
+        "Selam dostum",
+        "Nasılsınız",
+        "Ne yapıyorsun"
+      ],
+      "responses": [
+        "Selam, nasılsın?",
+        "Merhaba! Yardımcı olabilir miyim?",
+        "Günaydın! Bugün sana nasıl yardımcı olabilirim?",
+        "İyi günler! Ne hakkında konuşmak istersin?",
+        "Aleyküm selam! Yardımcı olabileceğim bir şey var mı?",
+        "Selam! Bugün nasıl hissediyorsun?",
+        "Yo! Nasılsın? Bir şeyler sormak istersen ben buradayım!",
+        "Selam! Hadi bakalım, neler var gündemde?"
+      ]
+    },
+    {
+      "tag": "kargo",
+      "patterns": [
+        "Kargom ne zaman gelir",
+        "Kargo durumu nedir",
+        "Siparişim nerede",
+        "Sipariş takibi",
+        "Kargo bilgisi",
+        "Kargoyu nasıl takip edebilirim",
+        "Sipariş kaç günde gelir",
+        "Kargo ne zaman teslim edilir",
+        "Kargom geldi mi?",
+        "Kargo durumunu nasıl öğrenebilirim",
+        "Takip numaramı nasıl bulurum",
+        "Kargo çıkış yaptı mı",
+        "Siparişimin durumu ne",
+        "Kargo takip numaram ne zaman geliyor"
+      ],
+      "responses": [
+        "Kargonuz 1-3 gün içinde elinizde olacak!",
+        "Takip kodunuzu girerek detaylı bilgilere ulaşabilirsiniz.",
+        "Kargonuz şu an yolda, en kısa sürede size ulaşacak.",
+        "Siparişinizin durumunu öğrenmek için takip numaranızı kullanabilirsiniz.",
+        "Kargo süresi bulunduğunuz bölgeye göre değişebilir, sabırlı olun!",
+        "Kargonuz şu anda dağıtımda. Birkaç gün içinde elinizde olacak.",
+        "Kargo takip linki üzerinden adım adım ilerleyebilirsiniz.",
+        "Kargonuz şu an yolda, lütfen sabırlı olun.",
+        "Takip kodunuz: [Tracking Code] - hemen kontrol edebilirsiniz."
+      ]
+    },
+    {
+      "tag": "iade",
+      "patterns": [
+        "Ürün iade etmek istiyorum",
+        "İade nasıl yaparım",
+        "Paramı geri alabilir miyim",
+        "İade süreci",
+        "Ürünü geri göndermek",
+        "İade etmek mümkün mü",
+        "Yanlış ürün geldi",
+        "Memnun değilim",
+        "Değişim yapmak istiyorum",
+        "Ürünü değiştirmek istiyorum",
+        "Iade politikası nedir",
+        "İade talebim nasıl işliyor",
+        "Yanlış beden gönderdiniz",
+        "Ürün hasar gördü"
+      ],
+      "responses": [
+        "İade süreniz 14 gündür, detayları destek sayfamızda bulabilirsiniz.",
+        "İade işlemi için lütfen şu linki takip edin: https://siteniz.com/iade",
+        "Ürünü iade etmek için kargonuzu hazırlayıp bizlere gönderebilirsiniz.",
+        "İade işlemleri hakkında daha fazla bilgi için müşteri hizmetlerine danışabilirsiniz.",
+        "İade süresi 14 gündür, bu süreyi aşmadan başvuruda bulunabilirsiniz.",
+        "Ürünü iade etmek için paketinizi tekrar gönderip, iade formunu doldurmanız gerekmektedir.",
+        "Yalnızca kullanılmamış ve etiketi çıkarılmamış ürünlerde iade kabul edilmektedir.",
+        "İade işlemini başlatmak için e-posta adresinizi ve sipariş numaranızı girmeniz yeterli.",
+        "Yanlış ürün aldığınızda değişim talep edebilirsiniz."
+      ]
+    },
+    {
+      "tag": "ödeme",
+      "patterns": [
+        "Hangi ödeme yöntemleri var",
+        "Kartla ödeyebilir miyim",
+        "Kapıda ödeme var mı",
+        "Ödemeyi nasıl yaparım",
+        "Kredi kartı kabul ediyor musunuz",
+        "Havale yapabilir miyim",
+        "Online ödeme yapabilir miyim",
+        "PayPal ile ödeme yapabilir miyim",
+        "Ödeme işlemi nasıl gerçekleşiyor",
+        "Fatura bilgilerini nasıl alırım",
+        "Ödememle ilgili sorun var"
+      ],
+      "responses": [
+        "Kredi kartı, banka kartı ve kapıda ödeme seçeneklerimiz mevcut.",
+        "Tüm kartlarla ödeme yapabilirsiniz, güvenli bir işlem!",
+        "Kapıda nakit ödeme seçeneğimiz de mevcut.",
+        "İsterseniz havale/EFT ile ödeme yapabilirsiniz.",
+        "PayPal, kredi kartı ve banka kartı ile ödeme yapabilirsiniz.",
+        "Online ödeme yapmak için kredi kartınızı kullanabilir veya banka transferini tercih edebilirsiniz.",
+        "Kapıda ödeme seçeneği ile siparişinizi onayladıktan sonra işlem yapabilirsiniz.",
+        "Web sitemiz üzerinden kredi kartı ile güvenli bir şekilde ödeme yapabilirsiniz.",
+        "Ödeme işleminiz başarıyla tamamlandı! Faturayı e-posta adresinizden alabilirsiniz."
+      ]
+    },
+    {
+      "tag": "teşekkür",
+      "patterns": [
+        "Teşekkürler",
+        "Sağ ol",
+        "Çok teşekkür ederim",
+        "Elinize sağlık",
+        "Eyvallah",
+        "Minnettarım",
+        "Teşekküler",
+        "Sağ olun",
+        "Çok sağ olun",
+        "Emeğinize sağlık",
+        "Yardımınız için teşekkürler"
+      ],
+      "responses": [
+        "Rica ederim, her zaman yardımcı olmaktan mutluluk duyarım!",
+        "Her zaman yardımcı olmak için buradayım!",
+        "Teşekkür ederim, sana da iyi günler dilerim!",
+        "Bir şey değil, başka bir sorunuz varsa buradayım.",
+        "Eyvallah kardeşim, yardımcı olabildiysem ne mutlu!",
+        "Rica ederim, başka bir konuda yardımcı olabilir miyim?",
+        "Her zaman yardımcı olabilirim, sağ ol!",
+        "Teşekkürler! Yardımcı olabileceğim başka bir konu var mı?"
+      ]
+    },
+    {
+      "tag": "hoşçakal",
+      "patterns": [
+        "Görüşürüz",
+        "Hoşçakal",
+        "Bay bay",
+        "Çıkıyorum",
+        "Sonra konuşuruz",
+        "Görüşmek üzere",
+        "İyi günler",
+        "Hadi bakalım",
+        "Bir sonraki sefere",
+        "Hoşça kal",
+        "Görüşürüz, kendine iyi bak",
+        "Yine görüşürüz",
+        "Bir dahaki sefere görüşmek üzere"
+      ],
+      "responses": [
+        "Görüşmek üzere, kendine iyi bak!",
+        "Hoşçakal, yardıma ihtiyacın olursa tekrar buradayım.",
+        "İyi günler, her zaman bekleriz!",
+        "Hoşça kal! Yardım gerekirse buradayım.",
+        "Görüşürüz, kendine iyi bak!",
+        "Bir sonraki sefere görüşürüz, sana da iyi günler!",
+        "Hoşça kal! Yardım için tekrar gelmek istersen, buradayım.",
+        "Görüşürüz, her zaman buradayım, unutma!"
+      ]
+    },
+    {
+      "tag": "ürün_bilgisi",
+      "patterns": [
+        "Ürün ne renk",
+        "Beden seçenekleri neler",
+        "Ürün hakkında bilgi",
+        "Hangi kumaş",
+        "Şort pamuk mu",
+        "Yıkama talimatı nedir",
+        "Bu ürün hangi koleksiyon",
+        "Ürünün ölçüleri nedir",
+        "Ürün açıklaması nedir",
+        "Ürün özellikleri neler",
+        "Şu an hangi ürünler mevcut",
+        "Ürünün stok durumu nasıl",
+        "Üründe hangi renk seçenekleri var"
+      ],
+      "responses": [
+        "Ürünümüz %100 pamuk ve oldukça rahat bir kalıptır.",
+        "Beden seçenekleri S, M, L, XL olarak mevcuttur.",
+        "Yıkama talimatları ürün üzerinde belirtilmiştir. Genellikle 30 derecede yıkamanız önerilir.",
+        "Bu ürünümüz, yeni sezon Urban Collection'a aittir.",
+        "Ürünümüzün kumaşı %80 pamuk ve %20 polyester karışımından yapılmıştır.",
+        "Yıkama talimatı olarak, 30°C’de yıkamanız önerilir.",
+        "Beden tablosuna web sitemizden ulaşabilirsiniz.",
+        "Bu şort, rahat bir kumaşa sahiptir ve günlük kullanım için idealdir.",
+        "Şu an için popüler renkler: Siyah ve Lacivert!"
+      ]
+    },
+    {
+      "tag": "siparis",
+      "patterns": [
+        "Siparişim nerede",
+        "Siparişimi nasıl verebilirim",
+        "Sipariş durumu nedir",
+        "Siparişimi iptal edebilir miyim",
+        "Siparişimi ne zaman alırım",
+        "Siparişimi takip edebilir miyim",
+        "Siparişimi neden almadım",
+        "Siparişimin teslimatı gecikti",
+        "Sipariş verirken sorun yaşadım"
+      ],
+      "responses": [
+        "Siparişiniz başarıyla alınmıştır ve işleme alınmaktadır.",
+        "Siparişinizi iptal etmek isterseniz, lütfen müşteri hizmetleri ile iletişime geçin.",
+        "Siparişinizin durumu hakkında daha fazla bilgiye sitemizden ulaşabilirsiniz.",
+        "Siparişinizi takip etmek için takip numaranızı kullanabilirsiniz.",
+        "Siparişiniz hazırlanıyor, birkaç gün içinde kargoya verilecektir.",
+        "Siparişiniz yolda, birkaç gün içinde teslim edilecektir.",
+        "Siparişinizin teslimatı biraz gecikmiş olabilir, özür dileriz.",
+        "Siparişinizi verdiğinizde e-posta ile bilgilendirme alabilirsiniz."
+      ]
+    },
+    {
+      "tag": "bilinmeyen",
+      "patterns": [],
+      "responses": [
+        "Üzgünüm, bunu anlayamadım. Canlı destek ile görüşmek ister misiniz?",
+        "Bu konuda daha fazla bilgiye ihtiyacım var. Başka bir şekilde ifade edebilir misiniz?",
+        "Anlayamadım, lütfen başka bir soru sorun veya canlı desteğe bağlanın.",
+        "Bunu anlayamadım, başka bir şey sormak ister misiniz?",
+        "Üzgünüm, bu konuda yardımcı olamıyorum. Yardım almak için başka bir konuda sorabilirsiniz."
+      ]
+    }
+  ]
+}

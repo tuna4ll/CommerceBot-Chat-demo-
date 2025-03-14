@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4L Chatbot</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #f4f4f9; }
+        .chat { margin-bottom: 10px; display: flex; align-items: center; }
+        .user { justify-content: flex-end; }
+        .bot { justify-content: flex-start; }
+        .message { max-width: 70%; padding: 10px; border-radius: 10px; margin: 5px; }
+        .user .message { background-color: #007bff; color: white; }
+        .bot .message { background-color: #e9ecef; color: black; }
+        input { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .avatar { width: 30px; height: 30px; border-radius: 50%; margin: 0 10px; }
+        .bot-avatar { background-color: #28a745; }
+        .user-avatar { background-color: #007bff; }
+    </style>
+</head>
+<body>
+    <h2>4L Chatbot</h2>
+    <div id="chatbox"></div>
+    <input type="text" id="userInput" placeholder="Mesaj yaz..." onkeydown="if(event.key==='Enter') sendMessage()">
+    <script>
+        function sendMessage() {
+            let input = document.getElementById("userInput");
+            let msg = input.value;
+            if (!msg) return;
+
+            let chatbox = document.getElementById("chatbox");
+            chatbox.innerHTML += `
+                <div class="chat user">
+                    <div class="message">${msg}</div>
+                    <div class="avatar user-avatar"></div>
+                </div>`;
+            input.value = "";
+
+            fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: msg })
+            })
+            .then(res => res.json())
+            .then(data => {
+                chatbox.innerHTML += `
+                    <div class="chat bot">
+                        <div class="avatar bot-avatar"></div>
+                        <div class="message">${data.response}</div>
+                    </div>`;
+                chatbox.scrollTop = chatbox.scrollHeight;
+            });
+        }
+    </script>
+</body>
+</html>
